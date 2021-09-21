@@ -1,70 +1,55 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <title>L3_CSS_Combinators _Demo1</title>
     <style>
-    
+      #heading {
+        color: #ff0000;
+      }
 
+      /**  Descendent combinator: more specific*/
 
-        /**  Descendent combinator: more specific*/
-      
+      /*Direct child*/
 
+      /**Adjacent-sibling combinator*/
 
-        /*Direct child*/
-     
+      /**all siblings*/
 
-
-       /**Adjacent-sibling combinator*/
-      
-
-
-
-       /**all siblings*/
-     
-
-
-
-       /*:hover -- pseduo class*/
-      
-
+      /*:hover -- pseduo class*/
     </style>
-</head>
-<body>
-     <!--Demo 1: Descendent combinator-->
+  </head>
+  <body>
+    <!--Demo 1: Descendent combinator-->
 
-        <h1 id="heading" class="font"> A <em>heading</em></h1>
-        <p class="font">A paragraph <em>with emphasis</em></p>
-    
+    <h1 id="heading" class="font">A <em>heading</em></h1>
+    <p class="font">A paragraph <em>with emphasis</em></p>
+
     <!-- Demo 2: Child combinator : direct child  -->
     <header>
-        <h1>Header</h1>
+      <h1>Header</h1>
     </header>
 
-        <article>
-            <h1>Article</h1>
-            <p>paragraph 1</p>
-            <p>paragraph 2</p>
-            <footer>Article footer</footer>
-        </article>
+    <article>
+      <h1>Article</h1>
+      <p>paragraph 1</p>
+      <p>paragraph 2</p>
+      <footer>Article footer</footer>
+    </article>
 
-        <footer>
-           Body footer
-        </footer>
-  
+    <footer>Body footer</footer>
+
     <!-- Demo 3: Pseudo-classes -->
     <p class="hover">hover me</p>
-   
-    
+
     <!-- Demo 4: -->
     <article>
-        <h1>Article</h1>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <blockquote>Quote</blockquote>
-        <p>Paragraph 3</p>
-        <footer>Article footer</footer>
+      <h1>Article</h1>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <blockquote>Quote</blockquote>
+      <p>Paragraph 3</p>
+      <footer>Article footer</footer>
     </article>
     <footer>Body footer</footer>
-        
-</body>
+  </body>
 </html>
