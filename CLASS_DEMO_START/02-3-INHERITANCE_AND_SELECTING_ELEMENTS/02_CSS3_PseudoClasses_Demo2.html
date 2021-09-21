@@ -1,65 +1,75 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>L3_CSS3_PseudoClasses_Demo3</title>
     <style>
-        article, header, nav, ul, li, footer {
-            margin:1em;
-            padding:1em;
-            outline:4px dashed black;
-        }
-        a {
-            color:#000000;
-        }
+      article,
+      header,
+      nav,
+      ul,
+      li,
+      footer {
+        margin: 1em;
+        padding: 1em;
+        outline: 4px dashed #000000;
+      }
+      a {
+        color: #000000;
+      }
 
-        nav ul{
-            list-style:none;
-        }
+      nav ul {
+        list-style: none;
+      }
 
-       /** CSS 3 Pseudo classes*/
-     
-
-
-
+      /** CSS 3 Pseudo classes*/
+      ul li:first-child {
+        background-color: #ff0000;
+      }
+      ul li:last-child {
+        background-color: #ffe600;
+      }
+      ul li:nth-child(3) {
+        background-color: #26ff00;
+      }
+      ul li:nth-child(odd) {
+        background-color: #00d9ff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="#item1">Item 1</a></li>
-            <li><a href="#item2">Item 2</a></li>
-            <li><a href="#item3">Item 3</a></li>
-            <li><a href="#item4">Item 4</a></li>
-            <li><a href="#item5">Item 5</a></li>
-            <li><a href="#item6">Item 6</a></li>
-        </ul>
+      <ul>
+        <li><a href="#item1">Item 1</a></li>
+        <li><a href="#item2">Item 2</a></li>
+        <li><a href="#item3">Item 3</a></li>
+        <li><a href="#item4">Item 4</a></li>
+        <li><a href="#item5">Item 5</a></li>
+        <li><a href="#item6">Item 6</a></li>
+      </ul>
     </nav>
     <header>
-        <h1>Header</h1>
+      <h1>Header</h1>
     </header>
     <article>
-        <h1>Article 1</h1>
-        <img src="QA_logo_blue.png">
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
+      <h1>Article 1</h1>
+      <img src="QA_logo_blue.png" />
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
     </article>
     <article>
-        <h1>Article 2</h1>
-        <p>Paragraph 1</p>
-        <p>Paragraph 2</p>
-        <p></p>
-        <img src="QA_logo_blue.png">
+      <h1>Article 2</h1>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p></p>
+      <img src="QA_logo_blue.png" />
     </article>
     <article>
-        <p><a href="#news1">Jump to New content 1</a></p>
-        <p><a href="#news2">Jump to New content 2</a></p>
-        <p id="news1">New content 1</p>
-        <p id="news2">New content 2</p>
+      <p><a href="#news1">Jump to New content 1</a></p>
+      <p><a href="#news2">Jump to New content 2</a></p>
+      <p id="news1">New content 1</p>
+      <p id="news2">New content 2</p>
     </article>
-    <footer>
-        Body footer
-    </footer>
-
-</body>
+    <footer>Body footer</footer>
+  </body>
 </html>
