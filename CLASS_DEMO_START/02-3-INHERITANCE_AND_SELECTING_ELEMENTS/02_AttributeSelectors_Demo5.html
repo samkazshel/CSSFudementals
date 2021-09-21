@@ -1,26 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title></title>
     <style>
-     /*^= operator finds attribute starting with a value*/
-     {
-         background-color:#ff6a00;
-     }
-     /*$= operator finds attribute ending with a value*/
-     {
-         background-color:#808080;
-     }
-     /* *= operator finds attribute containing the value*/
-     {
-         background-color:#ff0000;
-     }
-
-
+      /*^= operator finds attribute starting with a value*/
+      [class^="top"] {
+        background-color: #ff6a00;
+      }
+      /*$= operator finds attribute ending with a value*/
+      [class$="test"] {
+        background-color: #808080;
+      }
+      /* *= operator finds attribute containing the value*/
+      [class*="te"] {
+        background-color: #ff0000;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1 class="top-header">Welcome</h1>
     <p class="top-text">Hello world!</p>
     <p class="top-content">Are you learning CSS?</p>
@@ -29,6 +26,5 @@
     <div class="second">The second div element.</div>
     <div class="my-test">The third div element.</div>
     <p class="mytest">This is some text in a paragraph.</p>
-
-</body>
+  </body>
 </html>
