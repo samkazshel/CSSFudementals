@@ -12,14 +12,28 @@
       .bold {
         font-weight: bold;
       }
+      em {
+        background-color: #00ffff;
+      }
 
       /**  Descendent combinator: more specific*/
-
+      p em {
+        background-color: #ff0000;
+      }
       /*Direct child*/
+      body > footer {
+        background-color: #ffff00;
+      }
 
       /**Adjacent-sibling combinator*/
+      h1 + p {
+        background-color: #0000ff;
+      }
 
       /**all siblings*/
+      h1 ~ p {
+        background-color: #ffc0cb;
+      }
 
       /*:hover -- pseduo class*/
     </style>
