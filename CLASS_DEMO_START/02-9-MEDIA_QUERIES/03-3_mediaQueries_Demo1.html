@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <title>Media Rule</title> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Media Rule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        /*The @media rule is used to define different style rules for different media types/devices.
+      /*The @media rule is used to define different style rules for different media types/devices.
 
         In CSS2 this was called media types, while in CSS3 it is called media queries.
 
@@ -16,43 +16,39 @@
         resolution
         and much more*/
 
-        /*Media Query Syntax
+      /*Media Query Syntax
 
         @media not|only mediatype and (expressions) {
            CSS-Code;
        }*/
 
-        /*CSS3 Media Types*/
-        /*all -- 	Used for all media type devices
+      /*CSS3 Media Types*/
+      /*all -- 	Used for all media type devices
         print -- 	Used for printers
         screen --	Used for computer screens, tablets, smart-phones etc.
         speech --	Used for screenreaders that "reads" the page out loud*/
 
-        
-        /*min-width	The minimum width of the display area, such as a browser window
+      /*min-width	The minimum width of the display area, such as a browser window
         max-width	The maximum width of the display area, such as a browser window
         min-device-width	The minimum width of the device, such as a computer screen
         max-device-width	The maximum width of the device, such as a computer screen*/
 
+      body {
+        background-color: lightblue;
+      }
 
-            body {
-                background-color: lightblue;
-            }
-
-           {
-                body {
-                    background-color: lightgreen;
-                }
-            }
-
+      @media screen and (min-width: 480px) {
+        body {
+          background-color: lightgreen;
+        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>Resize the browser window to see the effect!</h1>
-    <p>The media query will only apply if the media type is screen 
-    and the viewport is 480px wide or wider.</p>
-
-
-</body>
+    <p>
+      The media query will only apply if the media type is screen and the
+      viewport is 480px wide or wider.
+    </p>
+  </body>
 </html>
